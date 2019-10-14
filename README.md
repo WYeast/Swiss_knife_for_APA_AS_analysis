@@ -6,7 +6,7 @@ The distribution or other metric of adjusted sites on each gene could also be ex
 
 The input file contains following rows 
 
-NAC001	AT1G01010	1	+	5631	5919
+NAC001	AT1G01010	1	+	5631	5919\n
 NAC001	AT1G01010	1	+	5631	5892
 
 Each row represents one alternative polyadenylation or splicing site. The first column is Arabidopsis gene name, the second is TAIR ID, the third 
