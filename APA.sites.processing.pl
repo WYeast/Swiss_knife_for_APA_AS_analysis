@@ -8,10 +8,10 @@ open IN,"$ARGV[0]" or die $!;
 open OUT,">$ARGV[1]" or die $!;   
 my %hash;
 while(<IN>){
-	  chomp;
-	  my @sp=split /\t/;
+    chomp;
+    my @sp=split /\t/;
 ## key=APA site, value=gene ID, 
-	  $hash{$sp[5]}="$sp[0]\t$sp[1]\t$sp[3]\t$sp[4]";   
+    $hash{$sp[5]}="$sp[0]\t$sp[1]\t$sp[3]\t$sp[4]";   
     }
 my %count;
 ## remove rudundant gene IDs
@@ -29,7 +29,7 @@ foreach my $unique_value (@unique_value){
 ## for each APA sites of each gene, calculate the number of APA clusters with different genes
 ## if necessary, the number of APA sites (APA_value) within different APA clusters can be also extracted from this step
     foreach my $APA_sites (@APA_sites){                    
-     	  my $difference = $APA_sites-$eachvalue[3];
+     	my $difference = $APA_sites-$eachvalue[3];
         my $index = abs(int($difference/15));
         $APA_value{$index}++;
         $sum_of_APA_difference+=$difference;
