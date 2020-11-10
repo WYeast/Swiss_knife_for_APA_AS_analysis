@@ -1,4 +1,4 @@
-# Swiss_knife_for_APA_AS_analysis
+# APA_AS_analysis
 This script aims to process the alternative polyadenylation (APA) or alternative splicing (AS) sites for downstream study. 
 The output file gives the number of APA or AS sites, the average distance of those sites to stop codon for each gene.
 The adjacent sites that are closed enough (default distance is 15 bp) will be clustered and regarded as the same adjusted sites,
